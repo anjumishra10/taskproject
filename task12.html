@@ -1,0 +1,340 @@
+<html>
+<head>
+<title>ONLINE RESERVATION SYSTEM</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <h1 style="text-align: center;">ONLINE RESERVATION SYSTEM</h1>
+<header>
+<div class="top">
+    <ul class="nav-menu">
+        <li class="homebtn"><a href="">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="Train.html">Train</a></li>
+        <li><a href="City.html">City</a></li>
+        <li><a href="Login.html">Login</a></li>
+        <li><a href="Contact.html">Contact us</a></li>
+    </ul>
+
+
+ </div>
+ <form action="">
+    <div style = "position:relative; left:80px; top:150px;">
+    <label for="State">Choose your State:</label>
+    <select name="state" id="atate">
+      <option value="Andaman & Nicobar">Andaman and Nicobar</option>
+      <option value="Andhra Pradesh">Andhra Pradesh</option>
+      <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+      <option value="Assam">Assam</option>
+      <option value="Bihar">Bihar</option>
+      <option value="Chandigarh">Chandigarh</option>
+      <option value="Chattisgarh">Chattisgarh</option>
+      <option value="Delhi">New Delhi</option>
+      <option value="Goa">Goa</option>
+      <option value="Gujarat">Gujarat</option>
+      <option value="Haryana">Haryana</option>
+      <option value="Himanchal Pradesh">Himanchal Pradesh</option>
+      <option value="Jammu & Kashmir">Jammu & Kashmir</option>
+      <option value="Jharkhand">Jharkhand</option>
+      <option value="Karnataka">Karnataka</option>
+      <option value="Kerala">Kerala</option>
+      <option value="Madhya Pradesh">Madhya Pradesh</option>
+      <option value="Maharastra">KMaharastra</option>
+      <option value="Manipur">Manipur</option>
+      <option value="Meghalay">Meghalay</option>
+      <option value="Nagaland">Nagaland</option>
+      <option value="Odisha">Odisha</option>
+      <option value="Punjab">Punjab</option>
+      <option value="Rajasthan">Rajasthan</option>
+      <option value="Sikkim">Sikkim</option>
+      <option value="Tamil Nadu">Tamil Nadu</option>
+      <option value="Telangna">Telangna</option>
+      <option value="Uttar Pradesh">Uttar Pradesh</option>
+      <option value="Uttra Khand">UttraKhand</option>
+      <option value="West Bengal">West Bengal</option>
+      
+
+    </select>
+  </form>
+  <form action="">
+    <div style = "position: absolute; right: 150px; top:5px;">
+    <label for="State">Choose your Destination State:</label>
+    <select name="state" id="atate">
+      <option value="Andaman & Nicobar">Andaman and Nicobar</option>
+      <option value="Andhra Pradesh">Andhra Pradesh</option>
+      <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+      <option value="Assam">Assam</option>
+      <option value="Bihar">Bihar</option>
+      <option value="Chandigarh">Chandigarh</option>
+      <option value="Chattisgarh">Chattisgarh</option>
+      <option value="Delhi">New Delhi</option>
+      <option value="Goa">Goa</option>
+      <option value="Gujarat">Gujarat</option>
+      <option value="Haryana">Haryana</option>
+      <option value="Himanchal Pradesh">Himanchal Pradesh</option>
+      <option value="Jammu & Kashmir">Jammu & Kashmir</option>
+      <option value="Jharkhand">Jharkhand</option>
+      <option value="Karnataka">Karnataka</option>
+      <option value="Kerala">Kerala</option>
+      <option value="Madhya Pradesh">Madhya Pradesh</option>
+      <option value="Maharastra">Maharastra</option>
+      <option value="Manipur">Manipur</option>
+      <option value="Meghalay">Meghalay</option>
+      <option value="Nagaland">Nagaland</option>
+      <option value="Odisha">Odisha</option>
+      <option value="Punjab">Punjab</option>
+      <option value="Rajasthan">Rajasthan</option>
+      <option value="Sikkim">Sikkim</option>
+      <option value="Tamil Nadu">Tamil Nadu</option>
+      <option value="Telangna">Telangna</option>
+      <option value="Uttar Pradesh">Uttar Pradesh</option>
+      <option value="Uttra Khand">UttraKhand</option>
+      <option value="West Bengal">West Bengal</option>
+      
+
+    </select>
+   <br><br>
+    </div>
+  </form>
+  <form action="">
+    <div style = "position: relative; left:20px; top:20px;">
+    <label for="Date Travel">Date for Journey:</label>
+    <input type="date" id="travel" name="travel">
+    <input type="submit">
+    </div>
+  </form>
+ 
+  <form action="">
+    <div style = "position: absolute; right: 150px; top:35px;">
+    <label for="Date Return">Date for Return:</label>
+    <input type="date" id="return" name="return">
+    <input type="submit">
+    </div>
+  </form>
+
+</header>
+<style>
+
+* {
+box-sizing: border-box;
+}
+
+img {
+vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+cursor: pointer;
+position: absolute;
+top: 40%;
+width: auto;
+padding: 16px;
+margin-top: -50px;
+color: white;
+font-weight: bold;
+font-size: 20px;
+border-radius: 0 3px 3px 0;
+user-select: none;
+-webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+color: #f2f2f2;
+font-size: 12px;
+padding: 8px 12px;
+position: absolute;
+top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+text-align: center;
+background-color: #222;
+padding: 2px 16px;
+color: white;
+}
+
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+/* Six columns side by side */
+.column {
+float: left;
+width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+opacity: 1;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+<body>
+
+
+
+<div class="container">
+<div class="mySlides">
+  <div class="numbertext">1 / 6</div>
+  <img src="Thailand.jpg" style="width:50%" class="center">
+</div>
+
+<div class="mySlides">
+  <div class="numbertext">2 / 6</div>
+  <img src="agra-agra-cantt-train-station-india.jpg" style="width:50%" class="center">
+</div>
+
+<div class="mySlides">
+  <div class="numbertext">3 / 6</div>
+  <img src="Kashmir.jpg" style="width:50%" class="center">
+</div>
+  
+<div class="mySlides">
+  <div class="numbertext">4 / 6</div>
+  <img src="Manali.jpg" style="width:50%" class="center">
+</div>
+
+<div class="mySlides">
+  <div class="numbertext">5 / 6</div>
+  <img src="Nilgiri-Toy-Train-Ride-1.jpeg" style="width:50%" class="center">
+</div>
+  
+<div class="mySlides">
+  <div class="numbertext">6 / 6</div>
+  <img src="exterior.jpg" style="width:50%" class="center">
+</div>
+  
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+<div class="caption-container">
+  <p id="caption"></p>
+</div>
+
+<div class="row">
+  <div class="column">
+    <img class="demo cursor" src="Thailand.jpg" style="width:50%" onclick="currentSlide(1)" alt="International Packages
+    Best deals in International Holiday packages, handpicked by IRCTC, for Thailand, Dubai, Sri Lanka, Hong Kong, China, Macau, Bhutan, Nepal, U.K., Europe, USA, Australia etc. The packages are inclusive of sightseeing, meals, visa charges and overseas medical insurance to give you a hassle-free and memorable experience." >
+  </div>
+  <div class="column">
+    <img class="demo cursor" src="agra-agra-cantt-train-station-india.jpg" style="width:50%" onclick="currentSlide(2)" alt=" Be it the spiritual devotee seeking blessings of Tirupati, Shirdi or Mata Vaishno Devi or the leisure traveller wanting to relish the Blue mountains of North East, Sand-dunes of Rajasthan, Hamlets of Ladakh, Wonders of Himalayas, Serene lakes or Picturesque Islands.
+    ">
+  </div>
+  <div class="column">
+    <img class="demo cursor" src="Kashmir.jpg" style="width:50%" onclick="currentSlide(3)" alt="Domesric Packages
+    Be it the spiritual devotee seeking blessings of Tirupati, Shirdi or Mata Vaishno Devi or the leisure traveller wanting to relish the Blue mountains of North East, Sand-dunes of Rajasthan, Hamlets of Ladakh, Wonders of Himalayas, Serene lakes or Picturesque Islands.
+
+     
+    " >
+  </div>
+  <div class="column">
+    <img class="demo cursor" src="Manali.jpg" style="width:50%" onclick="currentSlide(4)"alt="Rail Tour Packages
+    Online Reservation System offers Exclusive Rail tour packages with confirmed train tickets, sight-seeing and meals for enchanting Nilgiri Mountains, Darjeeling, Kullu Manali, Kashmir, Gangtok or divine tours of Mata Vaishno Devi, Rameswaram, Madurai, Shirdi, Tirupati etc. Holiday packages/ Land packages to these destinations are also available" >
+  </div>
+  <div class="column">
+    <img class="demo cursor" src="Nilgiri-Toy-Train-Ride-1.jpeg" style="width:50%" onclick="currentSlide(5)" alt="Online Reservation System offers Exclusive Rail tour packages with confirmed train tickets, sight-seeing and meals for enchanting Nilgiri Mountains, Darjeeling, Kullu Manali, Kashmir, Gangtok or divine tours of Mata Vaishno Devi, Rameswaram, Madurai, Shirdi, Tirupati etc. Holiday packages/ Land packages to these destinations are also available">
+  </div>    
+  <div class="column">
+    <img class="demo cursor" src="exterior.jpg" style="width:50%" onclick="currentSlide(6)" alt="Maharaja's Express
+    Redefining Royalty, Luxury and Comfort, Maharajas’ express takes you on a sojourn to the era of bygone stately splendour of princely states. Sylvan furnishings, elegant ambience and modern amenities are amalgamated for an “Experience Unsurpassed”.
+    ">
+  </div>
+</div>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+var i;
+var slides = document.getElementsByClassName("mySlides");
+var dots = document.getElementsByClassName("demo");
+var captionText = document.getElementById("caption");
+if (n > slides.length) {slideIndex = 1}
+if (n < 1) {slideIndex = slides.length}
+for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+}
+for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+}
+slides[slideIndex-1].style.display = "block";
+dots[slideIndex-1].className += " active";
+captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+<p>International Packages
+    Best deals in International Holiday packages, handpicked by IRCTC, for Thailand, Dubai, Sri Lanka, Hong Kong, China, Macau, Bhutan, Nepal, U.K., Europe, USA, Australia etc. The packages are inclusive of sightseeing, meals, visa charges and overseas medical insurance to give you a hassle-free and memorable experience.</p>
+
+<p>
+    Domestic Packages
+    Be it the spiritual devotee seeking blessings of Tirupati, Shirdi or Mata Vaishno Devi or the leisure traveller wanting to relish the Blue mountains of North East, Sand-dunes of Rajasthan, Hamlets of Ladakh, Wonders of Himalayas, Serene lakes or Picturesque Islands.
+</p>  
+<p>
+    Rail Tour Packages
+    Online Reservation System offers Exclusive Rail tour packages with confirmed train tickets, sight-seeing and meals for enchanting Nilgiri Mountains, Darjeeling, Kullu Manali, Kashmir, Gangtok or divine tours of Mata Vaishno Devi, Rameswaram, Madurai, Shirdi, Tirupati etc. Holiday packages/ Land packages to these destinations are also available.
+</p> 
+<p>
+    Maharaja's Express
+    Redefining Royalty, Luxury and Comfort, Maharajas’ express takes you on a sojourn to the era of bygone stately splendour of princely states. Sylvan furnishings, elegant ambience and modern amenities are amalgamated for an “Experience Unsurpassed".
+</p> 
+<footer>
+    <p text-align="center">Copywrite:Anju Mishra
+        </p>
+</footer>
+
+</body>
+</html>
